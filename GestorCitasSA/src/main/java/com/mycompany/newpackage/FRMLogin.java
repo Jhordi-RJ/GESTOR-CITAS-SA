@@ -1,5 +1,5 @@
 
-package com.mycompany.gestorcitassa.newpackage;
+package com.mycompany.newpackage;
 
 import javax.swing.JOptionPane;
 
