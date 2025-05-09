@@ -1,5 +1,8 @@
-com\mycompany\gestorcitassa\Paciente.class
 com\mycompany\gestorcitassa\RegistroCitas.class
-com\mycompany\gestorcitassa\MetodoPago.class
+com\mycompany\gestorcitassa\Registro.class
+com\mycompany\gestorcitassa\Registro$2.class
 com\mycompany\gestorcitassa\Doctor.class
+com\mycompany\gestorcitassa\Paciente.class
+com\mycompany\gestorcitassa\MetodoPago.class
 com\mycompany\gestorcitassa\Ticket.class
+com\mycompany\gestorcitassa\Registro$1.class
