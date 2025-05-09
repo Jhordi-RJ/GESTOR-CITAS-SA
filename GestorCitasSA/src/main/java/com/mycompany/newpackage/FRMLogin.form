@@ -218,7 +218,7 @@
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\YORMAN\Downloads\hospital-logo-and-symbols-templa (1).jpg"/>
+              <Image iconType="2" name="C:\Users\javie\Desktop\GESTOR CITAS\Imagenes\registro\icon.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel6"/>
           </Properties>

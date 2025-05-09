@@ -80,7 +80,7 @@ public class FRMLogin extends javax.swing.JFrame {
 
         jButton3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\YORMAN\\Downloads\\hospital-logo-and-symbols-templa (1).jpg")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\javie\\Desktop\\GESTOR CITAS\\Imagenes\\registro\\icon.jpg")); // NOI18N
         jLabel6.setText("jLabel6");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
@@ -214,6 +214,9 @@ public class FRMLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnCrearCuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearCuentaActionPerformed
+    
+    Registro registrar = new Registro();
+    registrar.setVisible(true);
         
     }//GEN-LAST:event_btnCrearCuentaActionPerformed
 

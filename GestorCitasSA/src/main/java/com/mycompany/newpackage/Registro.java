@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.mycompany.gestorcitassa;
+package com.mycompany.newpackage;
+
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -61,7 +63,7 @@ public class Registro extends javax.swing.JFrame {
 
         jLabel2.setText("TIPO DE DOCUMENTO");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\MENDOZA\\GESTOR-CITAS-SA\\Imagenes\\registro\\3.jpg")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\javie\\Desktop\\GESTOR CITAS\\Imagenes\\registro\\3.jpg")); // NOI18N
         jLabel3.setText("jLabel3");
 
         jLabel5.setText("NOMBRE");
@@ -97,6 +99,11 @@ public class Registro extends javax.swing.JFrame {
         btnregistrar.setBackground(new java.awt.Color(52, 152, 219));
         btnregistrar.setForeground(new java.awt.Color(255, 255, 255));
         btnregistrar.setText("REGISTRARSE");
+        btnregistrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnregistrarActionPerformed(evt);
+            }
+        });
 
         jPanel2.setBackground(new java.awt.Color(52, 152, 219));
 
@@ -260,6 +267,10 @@ public class Registro extends javax.swing.JFrame {
     private void txtcorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcorreoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtcorreoActionPerformed
+
+    private void btnregistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnregistrarActionPerformed
+        JOptionPane.showMessageDialog(this, "usuario registrado.");
+    }//GEN-LAST:event_btnregistrarActionPerformed
 
     /**
      * @param args the command line arguments
