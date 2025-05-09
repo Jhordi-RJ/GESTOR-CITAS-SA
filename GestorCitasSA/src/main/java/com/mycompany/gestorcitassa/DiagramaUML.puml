@@ -1,0 +1,78 @@
+@startuml
+@startuml
+class Doctor{
+- ID: int
+- Nombre: string
+- Celular: int
+- Correo: String
+- Contraseña: String
+- Especialidad: String
+- Consultorio: int
+- Experiencia: int
+- Horario: String
++ Atender_Paciente ()
++ Actualizar_Horario ()
++ Consultar_Cita()
+}
+
+class Paciente{
+- DNI: int
+- Nombre: String
+- Correo: String
+- Telefono: int
+- Edad: int
+- Direccion: String
+- Contraseña: String 
+- SeguroMedico: String
++ Agendar_Cita()
++ Cancelar_Cita()
++ Actualizar_Datos()
+}
+
+class RegistroCitas{
+- ID: int
+- Fecha: String
+- Paciente: Paciente
+- Doctor: Doctor
+- Estado: String
++ Crear_Cita()
++ Modificar_Cita()
++ Cancelar_Cita()
+}
+
+class MetodoPago{
+- ID: int
+- MetodoPago:enum
+- Monto: Double
+- Estado: String
++ Procesar_Pago()
++ Generar_Recibo()
++ Vereficar_Estado()
+}
+
+class Ticket{
+- ID: int
+- Monto: Double
+- Producto: String
+- Fecha: date
++ Visualizar_ticket()
+}
+
+Paciente "1" -- "0..n" RegistroCitas: Genera >
+Paciente -- RegistroCitas: Asociado <
+
+Paciente "1" -- "1" Doctor: Atendido >
+Paciente  -- Doctor: Atiende <
+
+RegistroCitas "1" -- "1" Ticket: Genera >
+RegistroCitas -- Ticket: Peretenece <
+
+MetodoPago "0..n" -- "1" Ticket: Tiene <
+MetodoPago -- Ticket: Asocia >
+
+MetodoPago "0..n"-- "1" Paciente: Tiene <
+MetodoPago -- Paciente: Tiene >
+
+
+
+@enduml
